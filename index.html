@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KnotSafe — Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 48px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6; color: #1f2430; background: #f7f7f8;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; background: #fff; border: 1px solid #e6e8ec;
+            border-radius: 14px; padding: 36px 40px; box-shadow: 0 1px 3px rgba(16,24,40,.05); }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; margin-bottom: 4px; }
+    .brand .dot { width: 26px; height: 26px; border-radius: 8px; background: linear-gradient(135deg,#ff2e86,#ff7a1e,#ef2338); }
+    .updated { color: #8a90a0; font-size: 13px; margin-bottom: 24px; }
+    h2 { font-size: 16px; margin: 26px 0 8px; }
+    p, li { font-size: 15px; color: #374151; }
+    ul { padding-left: 20px; }
+    .callout { background: #f0fbf4; border: 1px solid #cdeed9; color: #14663b;
+               border-radius: 10px; padding: 14px 16px; font-weight: 600; font-size: 15px; margin: 18px 0; }
+    code { background: #f1f2f5; padding: 1px 6px; border-radius: 6px; font-size: 13px; }
+    footer { margin-top: 28px; font-size: 13px; color: #8a90a0; }
+    a { color: #ef2338; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #14151a; color: #e6e8ec; }
+      .wrap { background: #1c1e26; border-color: #2a2d38; box-shadow: none; }
+      p, li { color: #c4c8d4; }
+      .callout { background: #10261a; border-color: #204d33; color: #7fe0a6; }
+      code { background: #2a2d38; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> KnotSafe</div>
+    <div class="updated">Salesforce Indicator &amp; Read-Only Lock · Privacy Policy · Last updated: 15 October 2026</div>
+
+    <div class="callout">KnotSafe does not collect, store, transmit, or sell any personal data. There are no servers, no accounts, and no analytics.</div>
+
+    <h2>What KnotSafe does</h2>
+    <p>KnotSafe is a browser extension that (1) shows which Salesforce environment — Production, Sandbox or Scratch Org — you are in, and (2) offers an optional read-only lock that blocks clicks, edits, form submissions and uploads on Salesforce records and on any website you choose, while still allowing reading and navigation. All of this happens locally, inside your own browser.</p>
+
+    <h2>Data we collect</h2>
+    <p><strong>None.</strong> KnotSafe has no backend and makes no network requests of its own. It reads the hostname of the page you are on, and the page's interactive elements (buttons, links, form fields), only to show the right indicator and enforce the lock. This is processed locally and is never recorded or sent anywhere. It does not read, log, or transmit the content of the pages you visit or of your Salesforce records.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>To remember your preferences, KnotSafe saves a small amount of settings data using the browser's local <code>storage</code> API. This data never leaves your device and includes only:</p>
+    <ul>
+      <li>the colour you chose for each Salesforce environment type;</li>
+      <li>whether the lock is on or off, per site / org hostname, and your “lock all sites” default;</li>
+      <li>whether the blocked-action sound is on, its volume, and the auto-hide setting;</li>
+      <li>the on-screen position of the badge;</li>
+      <li>a one-way <strong>SHA-256 hash</strong> of your optional unlock password (the password itself is never stored).</li>
+    </ul>
+    <p>You can clear this data at any time by removing the extension, or via your browser's extension storage controls.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Host access to all websites</strong> — so the extension can show the Salesforce indicator and apply read-only mode on the sites you choose to lock. Page content is processed locally and never sent anywhere.</li>
+      <li><strong>storage</strong> — to save the settings listed above on your device.</li>
+      <li><strong>tabs / activeTab</strong> — to read the current tab's address so the correct per-site state is shown.</li>
+      <li><strong>webNavigation</strong> — to keep the indicator and lock accurate when a single-page app changes views without reloading.</li>
+    </ul>
+
+    <h2>Record Lock and site lock</h2>
+    <p>The lock changes only what you see and can click in your own browser. It makes no changes to your Salesforce data and is not a substitute for Salesforce's own permissions and sharing model.</p>
+
+    <h2>Third parties</h2>
+    <p>KnotSafe does not share data with any third party, because it does not collect any. It contains no third-party code, trackers, remote code, or advertising.</p>
+
+    <h2>Children's privacy</h2>
+    <p>KnotSafe is a general-purpose developer utility and does not knowingly collect information from anyone, including children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the “Last updated” date above will be revised.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy? Email <a href="mailto:engage@technologyknots.com">engage@technologyknots.com</a>.</p>
+
+    <footer>© 2026 KnotSafe. This policy applies to the KnotSafe browser extension.</footer>
+  </div>
+</body>
+</html>
